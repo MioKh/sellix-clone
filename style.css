@@ -1,0 +1,74 @@
+.test{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.idk > span:first-child {
+    font-weight: bold;
+  }
+
+  .idk > span:nth-child(2) {
+    margin-left: 2px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  body{
+    background: linear-gradient(30deg, white, #f3d6e7, #c6c6ed, #f3d6e7);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: black;
+  }
+
+  nav h3{
+    margin-left: 15px;
+    font-size: 25px;
+    
+  }
+
+  nav a:nth-child(1){
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-buttons{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 25px;
+  }
+
+  .nav-buttons > button:nth-child(1){
+    background-color: white;
+    color: rgb(77, 76, 76);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+  }
+
+  .nav-buttons > button:nth-child(2){
+    background-color: #121417;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: none;
+  }
+  .nav-links{
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+  }
+    
