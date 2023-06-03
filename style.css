@@ -17,6 +17,7 @@
 
   body{
     background: linear-gradient(30deg, white, #f3d6e7, #c6c6ed, #f3d6e7);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -71,4 +72,35 @@
     display: flex;
     gap: 10px;
   }
+
+
+  .main-heading {
+    display: flex;
+  }
+
+  
+  .main-heading img {
+    height: 100%;
+    max-height: 740px;
+    flex: 1;
+    object-fit: cover;
+  }
+  
+  .main-heading h2 {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
     
+    
+  }
+
+  .content{
+    flex: 1;
+    width: 50%;
+  }
+  .image-container{
+    flex: 1;
+    width: 50%;
+    overflow: hidden;
+  }
+  
