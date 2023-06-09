@@ -263,15 +263,15 @@
   background-color: #f5f7f8;
 }
 
-.sell-section{
+.section{
   display: flex;
   align-items: center;
 	justify-content: space-between;
   max-width: 1440px;
-  margin: auto;
+  margin: 15rem auto;
 }
 
-.sell-img-containor{
+.img-containor{
   position: relative;
   display: flex;
   align-items: center;
@@ -280,55 +280,82 @@
   
 }
 
-.sell-img{
+.img{
   height: 600px;
   width: auto;
 }
 
-.sell-img-bg{
+.img-bg{
   position: absolute;
 	z-index: -1;
 	left: -70%;
 }
 
-.sell-squares{
+.pay-img-bg{
+  position: absolute;
+	z-index: -1;
+	left: 40%;
+}
+
+.squares{
 	display: flex;
 	flex-wrap: wrap;
 	gap:2rem 3.5rem;
 }
 
 
-.sell-info{
+.info{
   width: calc(55% - 1rem);
 }
 
-.sell-info h1{
+.info h1{
   font-size: 40px;
   font-weight: 800;
   font-family: "inter";
   color: #121417;
 }
 
-.sell-info h3{
+.info h3{
   font-size: 20px;
   font-weight: 600;
   font-family: "inter";
   color: #121417;
 }
 
-.sell-info p{
+.info p{
   font-size: 18px;
   font-weight: 400;
   font-family: "inter";
   color: #454c56;
 }
 
-.sell-info a{
+.info a{
   width: calc(50% - 2rem);
   text-decoration: none;
 }
 
 
+
+.crypto-types{
+  width: 100%;
+  background-image: url(https://cdn.sellix.io/static/landing/new/main/promise/something.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 2rem 7.5rem 2rem; 
+}
+
+.businesses-count{
+  font-family: "inter";
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  
+}
 
 
 
