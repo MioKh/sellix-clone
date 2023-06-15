@@ -454,6 +454,11 @@
   width: 100%;
 }
 
+.mobile-btns{
+  display: flex;
+  align-items: center;
+}
+
 .mobile-containor{
   background-image: url(https://cdn.sellix.io/static/landing/new/main/mobile-back.svg);
   background-repeat: no-repeat;
@@ -461,16 +466,11 @@
   padding: 7.5rem 2rem 7.75rem 2rem;
   max-width: 1440px;
   display: flex;
+  justify-content: space-between;
+  background-position-x: right;
   width: 100%;
 }
-.mobile-containor:after{
-  width: 100%;
-  height: 100%;
-  max-width: 1440px;
-   background-image: url(https://cdn.sellix.io/static/landing/new/main/mobile-back.svg);
-  background-repeat: no-repeat;
-  left: 50%;
-}
+
 
 
 .google-play{
@@ -480,6 +480,13 @@
 
 
 
+
+.pricing-section{
+  background-image: url(https://cdn.sellix.io/static/landing/new/ready-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
