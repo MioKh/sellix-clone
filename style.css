@@ -20,6 +20,7 @@
   }
 
   body{
+    /* background-color:rgb(46, 42, 42); */
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -158,7 +159,7 @@
   .image-container{
     flex: 1;
     width: 50%;
-
+    overflow-x: hidden;
     
   }
   .main-button-containor{
@@ -192,6 +193,7 @@
 
 .sell{
   padding-right: 2rem;
+
 }
   
 .trust-containor{
@@ -292,9 +294,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
-  
+ 
   
 }
 
@@ -326,6 +326,7 @@
   position: absolute;
 	z-index: -1;
 	left: 20rem;;
+  
 }
 
 .squares{
@@ -378,7 +379,7 @@
 }
 
 .crypto-types{
-  width: 100vw;
+  
   background-image: url(https://cdn.sellix.io/static/landing/new/main/promise/something.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -388,6 +389,7 @@
   align-items: center;
   justify-content: center;
   padding: 7.5rem 2rem 7.5rem 2rem; 
+  overflow-x: hidden;
 }
 
 .businesses-count{
@@ -451,12 +453,16 @@
 
 .mobile-app{
   display: flex;
-  width: 100%;
+  
 }
 
 .mobile-btns{
   display: flex;
   align-items: center;
+}
+
+.mobile-info{
+  width: 45%;
 }
 
 .mobile-containor{
@@ -473,12 +479,16 @@
 }
 
 .mobile-img{
-  position: absolute;
-  
-  right: 2rem;
-  width: 40%;
+width: 40%;
+position: absolute;
+right: 2rem;
+z-index: -1;
 }
 
+
+.img-test{
+  width: 100%;
+}
 
 
 .google-play{
@@ -494,6 +504,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 
 }
 
