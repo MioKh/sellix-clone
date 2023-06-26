@@ -456,7 +456,7 @@
   
 }
 
-.mobile-btns{
+.app-stores{
   display: flex;
   align-items: center;
 }
@@ -592,4 +592,32 @@ z-index: -1;
   align-items: center;
 }
 
+.info-and-links{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem; 
+  max-width: 1440px;
+  width: 100%;
+}
 
+.footer-info{
+  width: 30%;
+  background: #f5f7f8;
+  padding: 5rem 3rem 2rem 0rem;
+  border-right: 1px solid #dfe5e9
+}
+
+.get-support{
+  
+  max-width: 280px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid rgba(18,20,23,.05);
+}
+
+.footer{
+  display: flex;
+  
+}
