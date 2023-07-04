@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
-
+*,*::after,*::before{
+  box-sizing: border-box ;
+}
 
 .test{
     display: flex;
@@ -30,7 +32,7 @@
 
   .gradient {
     position: relative;
-    width: 100wh;
+    width: 100vw;
   }
   
   .gradient::before,
@@ -64,20 +66,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
+
     max-width: 1440px;
     width: 100%;
+    height: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    position: relative;
   }
+
+  @media (max-width: 1130px) {
+    .nav-features,
+    a:nth-child(n+6):not(.idk) {
+      display: none;
+    }
+  }
+  
   
   nav a{
     text-decoration: none;
     color: black;
+    margin: 0 0.75rem;
+   
   }
 
-  nav h3{
-    margin-right: 30px;
+  nav .nav-icon{
+    font-weight: bold;
     font-size: 25px;
-    
+    margin: 0 0.75rem;
   }
 
   .nav-features{
@@ -91,9 +107,8 @@
   
   .nav-buttons{
     display: flex;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: 25px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .nav-buttons > button:nth-child(1){
@@ -102,6 +117,7 @@
     border-radius: 10px;
     padding: 10px 20px;
     border: none;
+    margin-right: 1rem;
   }
 
   .nav-buttons > button:nth-child(2){
@@ -112,12 +128,19 @@
     border: none;
   }
   .nav-links{
-    margin-left: 30px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
   }
 
+  .hamburgar-menu{
+    display: none;
+  }
 
   .main-heading {
     
@@ -126,6 +149,7 @@
     display: flex;
     position: relative;
     padding-left: 35px;
+    margin-top: 5rem;
   }
 
   
@@ -294,7 +318,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  overflow-y: hidden;
   
 }
 
@@ -597,7 +621,7 @@ z-index: -1;
   justify-content: space-between;
   padding: 0 2rem; 
   max-width: 1440px;
-  width: 100%;
+
   margin: auto;
 }
 
@@ -699,3 +723,28 @@ text-decoration: none;
 }
 
 
+@media (max-width: 840px){
+  .nav-features,
+  .nav-links > a:nth-child(n+1):not(.idk),
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburgar-menu{
+    display: block;
+  }
+
+  .main-heading{
+    flex-direction: column;
+  }
+
+  .image-container{
+    overflow-x: visible;
+  }
+
+  .main-heading h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 1rem;
+  }
+}
