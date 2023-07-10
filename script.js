@@ -9,7 +9,7 @@ menuButton.addEventListener('click', function() {
     body.classList.toggle("open");
   });
 
-  const menuLinks = document.querySelectorAll('#menu a');
+  const menuLinks = document.querySelectorAll('#menu > a');
 menuLinks.forEach(function(link) {
   link.addEventListener('click', function() {
     menu.classList.remove('open');
